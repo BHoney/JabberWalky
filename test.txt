@@ -1,0 +1,1 @@
+Quick test to make sure github integration w/ Slack works.
