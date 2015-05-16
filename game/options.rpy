@@ -119,6 +119,32 @@ init -1 python hide:
 
     # style.window.yminimum = 250
 
+##ROBERT'S CODE STARTS HERE
+    #-----------Font-------------
+    # The font we wanna use is currently down
+    # Hopefully it comes back up before the Jam is over
+    #style.nvl_dialogue.font = "blahblah.tff"  
+    style.nvl_dialogue.size = 17
+    style.nvl_dialogue.color = "#2C2125" 
+    style.nvl_dialogue.drop_shadow = [(1,1)]
+    style.nvl_dialogue.drop_shadow_color = "#333333"  
+    
+    #----------Frame--------------
+    style.nvl_window.background = Frame("textbox.png", 0, 0)
+    # We'll add or remove a frame later.
+    # Notebook texture is the best bet
+
+    #---------Margins--------------
+    #This will handle the shape of the text box
+    style.nvl_window.top_margin = 30
+    style.nvl_window.bottom_margin = 30
+    style.nvl_window.left_margin = 440
+    style.nvl_window.right_margin = 10
+
+    style.nvl_window.top_padding = 50
+    style.nvl_window.bottom_padding = 10
+    style.nvl_window.left_padding = 50
+    style.nvl_window.right_padding = 50
 
     #########################################
     ## This lets you change the placement of the main menu.
