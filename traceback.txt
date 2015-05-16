@@ -1,0 +1,27 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 3, in script
+    init python:
+  File "game/script.rpy", line 11, in <module>
+    style.nvl_window.width = 55
+Exception: Style property width is not known.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 3, in script
+    init python:
+  File "/Users/BloodyHoney/Downloads/renpy-6.99.3-sdk/renpy/ast.py", line 785, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/BloodyHoney/Downloads/renpy-6.99.3-sdk/renpy/python.py", line 1445, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 11, in <module>
+    style.nvl_window.width = 55
+  File "renpy/style.pyx", line 373, in renpy.style.StyleCore.__setattr__ (gen/renpy.style.c:5837)
+    raise Exception("Style property {} is not known.".format(name))
+Exception: Style property width is not known.
+
+Darwin-14.3.0-x86_64-i386-64bit
+Ren'Py 6.99.3.404
+JabberWalky 0.0
