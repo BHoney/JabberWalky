@@ -2,16 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 2: python block expects a non-empty block.
-    init python:
-                ^
-
-File "game/script.rpy", line 3: expected 'word' not found.
-    style.nvl_window.width = 55
-         ^
-
-File "game/script.rpy", line 4: expected 'word' not found.
-    style.nvl_window.height = 90
-         ^
+File "game/script.rpy", line 18: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
 
 Ren'Py Version: Ren'Py 6.99.3.404

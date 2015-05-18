@@ -5,6 +5,7 @@ init python:
     style.nvl_menu_choice.color = "#20191C"
     style.nvl_menu_choice.drop_shadow = [(1,1)]
     style.nvl_menu_choice.drop_shadow_color = "#333333"
+    style.nvl_menu_choice.hover_color = "#243914"
 
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
