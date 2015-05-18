@@ -123,8 +123,8 @@ init -1 python hide:
     #-----------Font-------------
     # The font we wanna use is currently down
     # Hopefully it comes back up before the Jam is over
-    #style.nvl_dialogue.font = "blahblah.tff"  
-    style.nvl_dialogue.size = 17
+    style.nvl_dialogue.font = "OpenDyslexic3-Regular.ttf"  
+    style.nvl_dialogue.size = 13
     style.nvl_dialogue.color = "#2C2125" 
     style.nvl_dialogue.drop_shadow = [(1,1)]
     style.nvl_dialogue.drop_shadow_color = "#333333"  

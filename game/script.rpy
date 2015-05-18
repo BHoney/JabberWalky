@@ -1,6 +1,10 @@
 ﻿# You can place the script of your game in this file.
 init python:
     menu = nvl_menu
+    style.nvl_menu_choice.font = "OpenDyslexic3-Regular.ttf"
+    style.nvl_menu_choice.color = "#20191C"
+    style.nvl_menu_choice.drop_shadow = [(1,1)]
+    style.nvl_menu_choice.drop_shadow_color = "#333333"
 
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
@@ -18,6 +22,7 @@ menu:
 
         "North":
             n "Move North"
+          
         "South":
             n "Move South"
         "Dennis":
