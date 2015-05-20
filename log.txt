@@ -1,4 +1,4 @@
-Mon May 18 17:03:59 2015
+Wed May 20 14:36:56 2015
 Darwin-14.3.0-x86_64-i386-64bit
 Ren'Py 6.99.3.404
 JabberWalky 0.0
@@ -155,11 +155,24 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.025631 seconds.
-- Frame drawn at 0.033423 seconds.
-- Frame drawn at 0.049991 seconds.
-- Frame drawn at 0.067513 seconds.
-- 0.067513 seconds to render 5 frames.
+- Frame drawn at 0.019245 seconds.
+- Frame drawn at 0.031189 seconds.
+- Frame drawn at 0.048398 seconds.
+- Frame drawn at 0.064456 seconds.
+- 0.064456 seconds to render 5 frames.
+Traceback (most recent call last):
+  File "/Users/BloodyHoney/Downloads/renpy-6.99.3-sdk/renpy/execution.py", line 358, in run
+    node.execute()
+  File "/Users/BloodyHoney/Downloads/renpy-6.99.3-sdk/renpy/ast.py", line 1593, in execute
+    if renpy.python.py_eval(condition):
+  File "/Users/BloodyHoney/Downloads/renpy-6.99.3-sdk/renpy/python.py", line 1479, in py_eval
+    return eval(py_compile(source, 'eval'), globals, locals)
+  File "/Users/BloodyHoney/Downloads/renpy-6.99.3-sdk/renpy/python.py", line 512, in py_compile
+    raise e
+  File "game/script.rpy", line 1
+    beastiary(1) = False
+                 ^
+SyntaxError: invalid syntax
 
 Windowed mode.
 Screen sizes: virtual=(800, 600) physical=(800, 600)
@@ -312,11 +325,11 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.031514 seconds.
-- Frame drawn at 0.034487 seconds.
-- Frame drawn at 0.046102 seconds.
-- Frame drawn at 0.065207 seconds.
-- 0.065207 seconds to render 5 frames.
+- Frame drawn at 0.021313 seconds.
+- Frame drawn at 0.037416 seconds.
+- Frame drawn at 0.048062 seconds.
+- Frame drawn at 0.068436 seconds.
+- 0.068436 seconds to render 5 frames.
 
 Windowed mode.
 Screen sizes: virtual=(800, 600) physical=(800, 600)
@@ -469,8 +482,16 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.016781 seconds.
-- Frame drawn at 0.030562 seconds.
-- Frame drawn at 0.047253 seconds.
-- Frame drawn at 0.063880 seconds.
-- 0.063880 seconds to render 5 frames.
+- Frame drawn at 0.013435 seconds.
+- Frame drawn at 0.029331 seconds.
+- Frame drawn at 0.044257 seconds.
+- Frame drawn at 0.062762 seconds.
+- 0.062762 seconds to render 5 frames.
+Traceback (most recent call last):
+  File "/Users/BloodyHoney/Downloads/renpy-6.99.3-sdk/renpy/execution.py", line 358, in run
+    node.execute()
+  File "/Users/BloodyHoney/Downloads/renpy-6.99.3-sdk/renpy/ast.py", line 1480, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/Users/BloodyHoney/Downloads/renpy-6.99.3-sdk/renpy/script.py", line 602, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'listen_mome'.
