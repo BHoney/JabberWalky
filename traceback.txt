@@ -1,21 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 65, in script
-    
-ScriptError: could not find label 'listen_mome'.
+While compiling python block starting at line 2 of game/script.rpy.
+TypeError: compile() expected string without null bytes
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 65, in script
-    
-  File "/Users/BloodyHoney/Downloads/renpy-6.99.3-sdk/renpy/ast.py", line 1480, in execute
-    rv = renpy.game.script.lookup(target)
-  File "/Users/BloodyHoney/Downloads/renpy-6.99.3-sdk/renpy/script.py", line 602, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'listen_mome'.
+  File "/home/mister/Renpy/renpy-6.99.3-sdk/renpy/bootstrap.py", line 288, in bootstrap
+    renpy.main.main()
+  File "/home/mister/Renpy/renpy-6.99.3-sdk/renpy/main.py", line 284, in main
+    renpy.game.script.load_script() # sets renpy.game.script.
+  File "/home/mister/Renpy/renpy-6.99.3-sdk/renpy/script.py", line 181, in load_script
+    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
+  File "/home/mister/Renpy/renpy-6.99.3-sdk/renpy/script.py", line 498, in load_appropriate_file
+    self.finish_load(stmts, initcode, filename=rpyfn)
+  File "/home/mister/Renpy/renpy-6.99.3-sdk/renpy/script.py", line 352, in finish_load
+    self.update_bytecode()
+  File "/home/mister/Renpy/renpy-6.99.3-sdk/renpy/script.py", line 539, in update_bytecode
+    code = renpy.python.py_compile_exec_bytecode(i.source, filename=i.location[0], lineno=i.location[1])
+  File "/home/mister/Renpy/renpy-6.99.3-sdk/renpy/python.py", line 516, in py_compile_exec_bytecode
+    code = py_compile(source, 'exec', **kwargs)
+  File "/home/mister/Renpy/renpy-6.99.3-sdk/renpy/python.py", line 493, in py_compile
+    tree = ast.parse(source, filename, mode)
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/ast.py", line 37, in parse
+TypeError: compile() expected string without null bytes
 
-Darwin-14.3.0-x86_64-i386-64bit
+Linux-3.18.0-ctx.patch-x86_64-with-debian-jessie-sid
 Ren'Py 6.99.3.404
-JabberWalky 0.0
+ 
